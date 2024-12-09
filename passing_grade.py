@@ -22,12 +22,6 @@ except FileNotFoundError:
     model = None
     poly = None
 
-st.title('📈 Prediksi Passing Grade')
-st.markdown("""
-Aplikasi ini memprediksi nilai **Passing Grade (MIN)** berdasarkan nilai **RATAAN** dan **S.BAKU**.
-Gunakan menu di *sidebar* untuk memilih antara melihat dataset, grafik, atau melakukan prediksi.
-""")
-
 # Membaca file CSV untuk dataset
 try:
     df_passing_grade = pd.read_csv('passing-grade.csv')
